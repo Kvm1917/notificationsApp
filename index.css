@@ -1,0 +1,63 @@
+/* Write your code here. */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-family: "Roboto";
+}
+
+.image {
+  height: 20px;
+  width: 20px;
+  padding: 15px 10px;
+}
+
+.image-description {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 25px;
+}
+
+.image-primary,
+.image-success,
+.image-warning,
+.image-danger {
+  width: 50%;
+}
+
+.image-primary {
+  background-color: #0b69ff;
+}
+
+.paragraph {
+  color: #ffffff;
+  font-family: "Roboto";
+}
+
+.image-success {
+  background-color: #2dca73;
+}
+
+.image-warning {
+  background-color: #ffb800;
+}
+
+.image-danger {
+  background-color: #ff0b37;
+}
+
+@media screen and (max-width: 576px) {
+  .image-description {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    padding: 13px;
+    margin-top: 20px;
+  }
+} ;
