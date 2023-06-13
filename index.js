@@ -1,5 +1,7 @@
 const Notification = (props) => {
   //  Write your code here.
+  const { className, paragraphText } = props;
+  return <p className={`p ${className}`}>{paragraphText}</p>;
 };
 
 const element = (
@@ -11,7 +13,7 @@ const element = (
         className="image"
         src="https://assets.ccbp.in/frontend/react-js/primary-icon-img.png"
       />
-      <p className="paragraph">Information Message</p>
+      <Notification className="paragraph" paragraphText="Information Message" />
     </div>
 
     <div className="image-success image-description">
@@ -19,7 +21,7 @@ const element = (
         className="image"
         src="https://assets.ccbp.in/frontend/react-js/success-icon-img.png"
       />
-      <p className="paragraph">Success Message</p>
+      <Notification className="paragraph" paragraphText="Success Message" />
     </div>
 
     <div className="image-warning image-description">
@@ -27,7 +29,7 @@ const element = (
         className="image"
         src="https://assets.ccbp.in/frontend/react-js/warning-icon-img.png"
       />
-      <p className="paragraph">Warning Message</p>
+      <Notification className="paragraph" paragraphText="Warning Message" />
     </div>
 
     <div className="image-danger image-description">
@@ -35,7 +37,7 @@ const element = (
         className="image"
         src="https://assets.ccbp.in/frontend/react-js/danger-icon-img.png"
       />
-      <p className="paragraph">Error Message</p>
+      <Notification className="paragraph" paragraphText="Error Message" />
     </div>
   </div>
 );
